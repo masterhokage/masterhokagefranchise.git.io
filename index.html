@@ -1,0 +1,387 @@
+﻿<!DOCTYPE html>
+<html lang="en-US">
+<title>Master Hokage Franchise</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="icon" href="./img/logocrop.png" type="image/x-icon">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/bootstrap.min2.css">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.fa {
+  padding: 5px 5px;
+  font-size: 15px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 2px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.fa-skype {
+  background: #00aff0;
+  color: white;
+}
+
+.fa-android {
+  background: #a4c639;
+  color: white;
+}
+
+.fa-dribbble {
+  background: #ea4c89;
+  color: white;
+}
+
+.fa-vimeo {
+  background: #45bbff;
+  color: white;
+}
+
+.fa-tumblr {
+  background: #2c4762;
+  color: white;
+}
+
+.fa-vine {
+  background: #00b489;
+  color: white;
+}
+
+.fa-foursquare {
+  background: #45bbff;
+  color: white;
+}
+
+.fa-stumbleupon {
+  background: #eb4924;
+  color: white;
+}
+
+.fa-flickr {
+  background: #f40083;
+  color: white;
+}
+
+.fa-yahoo {
+  background: #430297;
+  color: white;
+}
+
+.fa-soundcloud {
+  background: #ff5500;
+  color: white;
+}
+
+.fa-reddit {
+  background: #ff5700;
+  color: white;
+}
+
+.fa-rss {
+  background: #ff6600;
+  color: white;
+}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:0.2}
+.modal.fade .modal-dialog {
+  -webkit-transform: translate(0, -25%);
+  -ms-transform: translate(0, -25%);
+  -o-transform: translate(0, -25%);
+  transform: translate(0, -25%);
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  -o-transition: -o-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+}
+.modal-backdrop.fade {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+.fade {
+  opacity: 0;
+  -webkit-transition: opacity 0.15s linear;
+  -o-transition: opacity 0.15s linear;
+  transition: opacity 0.15s linear;
+}
+.fade.in {
+  opacity: 1;
+}
+.tab-content > .tab-pane {
+  display: none;
+}
+.tab-content > .active {
+  display: block;
+}
+[data-toggle="buttons"] > .btn input[type="radio"],
+[data-toggle="buttons"] > .btn-group > .btn input[type="radio"],
+[data-toggle="buttons"] > .btn input[type="checkbox"],
+[data-toggle="buttons"] > .btn-group > .btn input[type="checkbox"] {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  pointer-events: none;
+}
+ul.breadcrumb {
+    padding: 8px 16px;
+    list-style: none;
+    background-color: #eee;
+}
+ul.breadcrumb li {display: inline;}
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+}
+ul.breadcrumb li a {color: green;}
+
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-blue w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class='topnav-icons fa fa-close w3-center w3-hide-large w3-text-white' title='Home' style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><center><img src="./img/logocrop.png" style="width: 230px;"><br style="margin-top: 5px;">Food Cart<br>Franchise</center></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="about.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About Us</a> 
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">
+          <button onclick="myFunction('Demo1')"  class="w3-button w3-blue w3-right-align" style="margin-left: -19px;">
+          Food Concepts</button>
+          <div id="Demo1" class="w3-hide">
+            <a class="w3-button w3-block w3-left-align" href="emotea.html">Emotea</a>
+            <a class="w3-button w3-block w3-left-align" href="belgian.html">Belgian Bites</a>
+            <a class="w3-button w3-block w3-left-align" href="kawali.html">Kawali Express</a>
+            <a class="w3-button w3-block w3-left-align" href="sisig.html">Sisig de Leche</a>
+            <a class="w3-button w3-block w3-left-align" href="little.html">Little China Dimsum</a>
+            <a class="w3-button w3-block w3-left-align" href="smooth.html">Smooth Blendz</a>
+          </div>
+          
+          <script>
+          function myFunction(id) {
+              var x = document.getElementById(id);
+              if (x.className.indexOf("w3-show") == -1) {
+                  x.className += " w3-show";
+              } else { 
+                  x.className = x.className.replace(" w3-show", "");
+              }
+          }
+          </script>
+    </a> 
+    <a href="clients.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Clients</a> 
+    <a href="promos.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Promos</a>
+    <a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-blue w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-blue w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Master Hokage Franchise</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+
+      <div class="w3-container" style="margin-top:80px" id="showcase">
+        <h1 class="w3-jumbo"><b>THE WORLDS LARGEST STREET FOOD FRANCHISE</b></h1>
+        <hr style="width:50px;border:5px solid red" class="w3-round">
+      </div>
+      
+        <!-- Image Carousel -->
+    <div class="container" style="width: 100%;" >
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+          <li data-target="#myCarousel" data-slide-to="3"></li>
+          <li data-target="#myCarousel" data-slide-to="4"></li>
+          <li data-target="#myCarousel" data-slide-to="5"></li>
+          <li data-target="#myCarousel" data-slide-to="6"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+
+          <div class="item active">
+            <img src="./img/belgianmain.jpg" alt="Belgian Bites" style="width:100%;" >
+          </div>
+
+          <div class="item">
+            <img src="./img/emomain.jpg" alt="Emotea" style="width:100%;">
+          </div>
+        
+          <div class="item">
+            <img src="./img/kawalimain.jpg" alt="Kawali Express" style="width:100%;">
+          </div>
+
+          <div class="item">
+            <img src="./img/littlemain.jpg" alt="Little Chicken Dimsum" style="width:100%;" >
+          </div>
+
+          <div class="item">
+            <img src="./img/sisigmain.jpg" alt="Sisig and Leche" style="width:100%;">
+          </div>
+        
+          <div class="item">
+            <img src="./img/smoothmain.jpg" alt="Smooth and Blendz" style="width:100%;">
+          </div>
+
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+
+<!-- brief intro text-->
+  <div class="w3-container" id="services" style="margin-top:45px">
+    <p>Murang Negosoyo! Affordable Food Cart Franchises Starting at P30,000.00!<br><br>
+      "Start small but think big!" This is what my mentor told me when I started first doing business. I was working in an office, but I was unhappy and unsatisfied.<br><br>
+      You probably want to start your own food cart (or else you won't be reading this, will you?). Here is your chance! Our company, Tri top Venture, is opening its doors to franchising for the Juan Masipag in you! Our food carts start at P30,000.00, very affordable and smart budding businessmen who are transitioning from working for a boss to being the boss!
+    </p>
+  </div>
+
+<!-- Photo grid (modal) -->
+      <div class="w3-container" style="margin-top:80px" id="showcase">
+        <h1 class="w3-xxxlarge w3-text-red"><b>Packages</b></h1>
+        <hr style="width:50px;border:5px solid red" class="w3-round">
+      </div>
+    
+  <div class="w3-row-padding">
+    <div class="">
+    <div class="w3-half">
+      <img src="./img/emologo.jpg" style="width:100%" onclick="onClick(this)" alt="Concrete meets bricks">
+      <img src="./img/belgianlogo.jpg" style="width:100%" onclick="onClick(this)" alt="Light, white and tight scandinavian design">
+      <img src="./img/smoothlogo.jpg" style="width:100%" onclick="onClick(this)" alt="White walls with designer chairs">
+    </div>
+
+    <div class="w3-half">
+      <img src="./img/sisiglogo.jpg" style="width:100%" onclick="onClick(this)" alt="Sisig">
+      <img src="./img/kawali logo.jpg"  style="width:100%" onclick="onClick(this)" alt="Kawali">
+      <img src="./img/littlelogo.jpg" style="width:100%" onclick="onClick(this)" alt="Little">
+    </div>
+  </div>
+
+  
+<!-- End page content -->
+</div>
+
+
+<!-- W3.CSS Container -->
+<div class="w3-row">
+<div class="w3-quarter w3-container" style="margin-top:75px;">
+<p class="w3-left"> 
+<!-- Add font awesome icons -->
+<i style="font-size:20px" class="fa">&#xf2ba;</i>
+<h4 style="font-size:15px"> +63910 123 4563 </h4>
+</p>
+</div>
+
+<div class="w3-quarter w3-container" style="margin-top:75px;">
+<p class="w3-left"> 
+<i style="font-size:20px" class="fa">&#xf2ba;</i>
+<h4 style="font-size:15px">master.hokage@y.com</h4>
+</p>
+</div>
+
+<div class="w3-half w3-container" style="margin-top:75px;padding-right:58px">
+<p class="w3-right">
+<!-- Add font awesome icons -->
+<a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-google"></a>
+<a href="#" class="fa fa-linkedin"></a>
+<a href="#" class="fa fa-youtube"></a>
+<a href="#" class="fa fa-instagram"></a>
+<a href="#" class="fa fa-skype"></a>
+<a href="#" class="fa fa-yahoo"></a>
+</p>
+</div>
+</div>
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
